@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":courseSection-m10_string-ShoppingList" external.linked.project.path="$MODULE_DIR$/../../../../../courseSection/m10_string/ShoppingList" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Cydeo Java practice tasks" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../courseSection/m10_string/ShoppingList">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../courseSection/m10_string/ShoppingList/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../courseSection/m10_string/ShoppingList/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../courseSection/m10_string/ShoppingList/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
