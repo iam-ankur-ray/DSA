@@ -25,7 +25,6 @@ public class TwoSumProblem {
                 break;
             }
             integers.put(nums[i], i);
-
         }
 
         return answer;

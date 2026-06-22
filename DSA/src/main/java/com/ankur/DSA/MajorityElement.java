@@ -6,6 +6,12 @@ public class MajorityElement {
         System.out.println(getTheMajorityElementFromArray(array));
     }
 
+    /**
+     * Return the majority element from an array
+     * Moore’s Voting Algorithm
+     * @param array list
+     * @return majority element i.e., if frequency is more than length of the array
+     */
     private static  int getTheMajorityElementFromArray(int[] array){
         int n = array.length;
         int candidate = array[0];
