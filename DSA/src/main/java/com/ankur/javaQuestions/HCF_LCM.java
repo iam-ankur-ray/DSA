@@ -2,7 +2,7 @@ package com.ankur.javaQuestions;
 
 public class HCF_LCM {
     public static void main(String[] args) {
-        System.out.println(getLCM(14,21));
+        System.out.println(getHCF(33,48));
     }
 
     /**
