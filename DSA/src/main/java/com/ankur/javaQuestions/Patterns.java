@@ -133,6 +133,4 @@ public class Patterns {
             space -=2;
         }
     }
-
-
 }
