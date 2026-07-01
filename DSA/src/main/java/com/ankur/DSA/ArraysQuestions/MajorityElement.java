@@ -1,4 +1,4 @@
-package com.ankur.DSA;
+package com.ankur.DSA.ArraysQuestions;
 
 public class MajorityElement {
     public static void main(String[] args) {
