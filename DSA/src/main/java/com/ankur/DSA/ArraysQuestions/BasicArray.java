@@ -112,6 +112,10 @@ public class BasicArray {
     int column = 3;
     int[][] math = new int[row][column];
 
+    /**
+     * Print the first row of 2D array
+     * @param arr of matrix
+     */
     public static void matrix(int[][] arr){
         for(int i = 0; i < arr[0].length; i++){
             System.out.println(arr[0][i]);
