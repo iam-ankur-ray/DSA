@@ -10,12 +10,15 @@ public class BasicArray {
 
         String[] strArray = {"flower","flow","flight"};
         int [] arr = {1,1,8,5,1,8,9};
+        int [] arr2 = {2,2,3,4,2,3,4};
+        int[][] arr3 = {arr,arr2};
        // System.out.println(strArray[0].charAt(1));
 
 
        int[] ans = findFrequency(arr, arr.length);
        printArray(arr);
        printArray(ans);
+        matrix(arr3);
     }
 
     /**
@@ -102,6 +105,17 @@ public class BasicArray {
             ans[i] = frequency(arr,n,arr[i]);
         }
         return ans;
+    }
+
+    // 2-D arrays
+    int row = 4;
+    int column = 3;
+    int[][] math = new int[row][column];
+
+    public static void matrix(int[][] arr){
+        for(int i = 0; i < arr[0].length; i++){
+            System.out.println(arr[0][i]);
+        }
     }
 
 }
