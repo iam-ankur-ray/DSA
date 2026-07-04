@@ -1,5 +1,8 @@
 package com.ankur.DSA.ArraysQuestions;
 
+import java.util.ArrayList;
+import java.util.Objects;
+
 public class BasicArray {
     public static void main(String[] args) {
         int[] array = new int[10];
@@ -9,16 +12,29 @@ public class BasicArray {
         }
 
         String[] strArray = {"flower","flow","flight"};
+        int[] hello = {1,2,3,4,4,5,6};
         int [] arr = {1,1,8,5,1,8,9};
         int [] arr2 = {2,2,3,4,2,3,4};
         int[][] arr3 = {arr,arr2};
        // System.out.println(strArray[0].charAt(1));
 
 
-       int[] ans = findFrequency(arr, arr.length);
-       printArray(arr);
-       printArray(ans);
-        matrix(arr3);
+//       int[] ans = findFrequency(arr, arr.length);
+//       printArray(arr);
+//       printArray(ans);
+//        matrix(arr3);
+//        boolean isSorted = isSortedArray(hello);
+//        System.out.println(isSorted);
+        ArrayList<Integer> array1 = new ArrayList<>();
+        array1.add(2);
+        array1.add(4);
+        array1.add(2); array1.add(3);
+        array1.add(3); array1.add(2); array1.add(5);
+
+        System.out.println(array1);
+
+
+
     }
 
     /**
@@ -120,6 +136,35 @@ public class BasicArray {
         for(int i = 0; i < arr[0].length; i++){
             System.out.println(arr[0][i]);
         }
+    }
+
+    /**
+     * Check if array is sorted
+     */
+
+    public static boolean isSortedArray(int[] arr){
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] < arr[i - 1]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static ArrayList<Integer> solve(ArrayList<Integer> A){
+        ArrayList<Integer> answer = new ArrayList<>(A.size());
+
+        for(int i = 0; i < A.size(); i++){
+            int count = 0;
+            for (Integer integer : A) {
+                if (integer.equals(A.get(i))) {
+                    count++;
+                }
+            }
+            answer.add(count);
+        }
+
+        return answer;
     }
 
 }
