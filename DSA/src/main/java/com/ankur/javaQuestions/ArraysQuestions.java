@@ -1,5 +1,7 @@
 package com.ankur.javaQuestions;
 
+import com.ankur.DSA.ArraysQuestions.BasicArray;
+
 import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
@@ -99,10 +101,27 @@ public class ArraysQuestions {
         }
     }
 
+    /**
+     * return the transpose of matrix
+     * row becomes the column
+     */
+    public static int[][] getTransposeOfMatrix(int[][] matrix){
+        int[][] answer = new int[matrix[0].length][matrix.length];
+
+        for(int i = 0; i < matrix[0].length; i++){
+            for(int j = 0; j < matrix.length; j++){
+                answer[i][j] = matrix[j][i];
+            }
+        }
+        return answer;
+    }
+
 
     public static void main(String[] args) {
-        int[] singleArray = {1,2,3,4,5,3,6};
         int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9},{10,11,12}};
-        printSumOfRows(array);
+        int[][] answer = getTransposeOfMatrix(array);
+        for(int[] value: answer){
+            BasicArray.printArray(value);
+        }
     }
 }
