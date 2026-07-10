@@ -18,8 +18,8 @@ public class PlayWithLoops {
     }
 
 
-    public static void multipleOfFour(int value){
-        for(int i = 4; i <= value; i+=4){
+    public static void multipleOfFour(int rowValue){
+        for(int i = 4; i <= rowValue; i+=4){
             System.out.print(i + " ");
         }
     }
@@ -27,9 +27,9 @@ public class PlayWithLoops {
     /**
      * Get perfect square till N
      */
-    public static void getPerfectSquare(int value){
-        for(int i = 1; i <= value; i++){
-            if(i * i > value) break;
+    public static void getPerfectSquare(int rowValue){
+        for(int i = 1; i <= rowValue; i++){
+            if(i * i > rowValue) break;
             System.out.println(i * i);
         }
     }
@@ -37,12 +37,12 @@ public class PlayWithLoops {
     /**
      * Get the reverser of an integer
      */
-    public static int getReverse(int value){
+    public static int getReverse(int rowValue){
         int reverse = 0;
-        while(value > 0){
-            int remainder = value % 10;
+        while(rowValue > 0){
+            int remainder = rowValue % 10;
             reverse = reverse * 10 + remainder;
-            value /= 10;
+            rowValue /= 10;
         }
         return reverse;
     }

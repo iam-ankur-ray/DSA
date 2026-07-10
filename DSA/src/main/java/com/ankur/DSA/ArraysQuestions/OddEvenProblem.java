@@ -17,8 +17,8 @@ public class OddEvenProblem {
 
             int evenSize = 0;
             int oddSize = 0;
-            for (int value : array) {
-                if (value % 2 == 0) {
+            for (int rowValue : array) {
+                if (rowValue % 2 == 0) {
                     evenSize++;
                 } else {
                     oddSize++;
@@ -44,13 +44,13 @@ public class OddEvenProblem {
                 }
             }
 
-            for (int value : oddArray) {
-                System.out.print(value + " ");
+            for (int rowValue : oddArray) {
+                System.out.print(rowValue + " ");
             }
             System.out.println();
 
-            for (int values : evenArray) {
-                System.out.print(values + " ");
+            for (int rowValues : evenArray) {
+                System.out.print(rowValues + " ");
             }
             System.out.println();
 

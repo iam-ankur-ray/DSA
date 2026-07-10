@@ -11,8 +11,8 @@ public class SmallestNumber {
 
     /**
      * Method to return the concatenation of smallest numbers which can be multiple of any integer.
-     * @param number any integer value
-     * @return concatenated numerical value whose product is equivalent to input of the integer value. i.e., input = 100, output = 445 (as 4*4*5 = 100)
+     * @param number any integer rowValue
+     * @return concatenated numerical rowValue whose product is equivalent to input of the integer rowValue. i.e., input = 100, output = 445 (as 4*4*5 = 100)
      */
     private static int getSmallestNumber(int number) {
         StringBuilder answer = new StringBuilder();

@@ -31,8 +31,8 @@ public class MajorityElement {
         }
 
         count = 0;
-        for(int values: array){
-            if(values == candidate){
+        for(int rowValues: array){
+            if(rowValues == candidate){
                 count++;
             }
         }

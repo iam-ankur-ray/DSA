@@ -38,12 +38,12 @@ public class BasicArray {
     }
 
     /**
-     * Function to print the value of all elements within array
+     * Function to print the rowValue of all elements within array
      * @param arr integers of array
      */
     public static void printArray(int[] arr){
-        for(int value : arr){
-            System.out.print(value + " ");
+        for(int rowValue : arr){
+            System.out.print(rowValue + " ");
         }
         System.out.println();
     }
@@ -63,9 +63,9 @@ public class BasicArray {
 
 
     /**
-     * Find the maximum value from the element.
+     * Find the maximum rowValue from the element.
      * @param arr integers of array
-     * @return maximum value available in array
+     * @return maximum rowValue available in array
      */
     public static int findMax(int[] arr){
         int max = arr[0];
@@ -79,9 +79,9 @@ public class BasicArray {
     }
 
     /**
-     * Find the minimum value from the element.
+     * Find the minimum rowValue from the element.
      * @param arr integers of array
-     * @return minimum value available in array
+     * @return minimum rowValue available in array
      */
     public static int findMin(int[] arr){
         int min = arr[0];

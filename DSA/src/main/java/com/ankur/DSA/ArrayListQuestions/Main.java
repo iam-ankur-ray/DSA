@@ -52,17 +52,17 @@ public class Main {
                 array[i] = sc.nextInt();
             }
 
-            int findValue = sc.nextInt();
+            int findrowValue = sc.nextInt();
 
-            boolean valueFound = false;
+            boolean rowValueFound = false;
             for(int i = 0; i < size; i++){
-                if(array[i] == findValue){
-                    valueFound = true;
+                if(array[i] == findrowValue){
+                    rowValueFound = true;
                     break;
                 }
             }
 
-            if(valueFound){
+            if(rowValueFound){
                 System.out.println(1);
             } else {
                 System.out.println(0);

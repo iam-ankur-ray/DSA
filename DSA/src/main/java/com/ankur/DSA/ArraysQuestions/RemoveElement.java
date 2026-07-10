@@ -25,8 +25,8 @@ public class RemoveElement {
             answer[i] = array[i];
         }
 
-        for(int values : answer){
-            System.out.print(values + " ");
+        for(int rowValues : answer){
+            System.out.print(rowValues + " ");
         }
     }
 }

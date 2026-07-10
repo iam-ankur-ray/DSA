@@ -6,8 +6,8 @@ public class InversionArray {
     public static void main(String[] args) {
         int[] array = {3, 1, 0, 2};
        int[] answer = solve(array);
-       for(int value : answer){
-           System.out.print(value + " ");
+       for(int rowValue : answer){
+           System.out.print(rowValue + " ");
        }
     }
 
@@ -15,10 +15,10 @@ public class InversionArray {
         int size = A.length;
         int[] answer = new int[size];
 
-        int value = 0;
+        int rowValue = 0;
         for (int i = 0; i < size; i++) {
-            value = A[i];
-            answer[value] = i;
+            rowValue = A[i];
+            answer[rowValue] = i;
         }
         return answer;
     }

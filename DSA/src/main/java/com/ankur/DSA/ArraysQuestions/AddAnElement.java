@@ -27,8 +27,8 @@ public class AddAnElement {
             answer[i] = array[i-1];
         }
 
-        for(int values : answer){
-            System.out.print(values + " ");
+        for(int rowValues : answer){
+            System.out.print(rowValues + " ");
         }
 
     }

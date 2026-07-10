@@ -7,10 +7,10 @@ import java.util.Scanner;
 
 public class ArraysQuestions {
     /**
-     * Return boolean value true if array is sorted.
+     * Return boolean rowValue true if array is sorted.
      *
      * @param arr integer array
-     * @return boolean value
+     * @return boolean rowValue
      */
     public static boolean isSorted(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
@@ -96,8 +96,8 @@ public class ArraysQuestions {
             answer[i] = sum;
         }
 
-        for(int value : answer){
-            System.out.print(value + " ");
+        for(int rowValue : answer){
+            System.out.print(rowValue + " ");
         }
     }
 
@@ -120,8 +120,8 @@ public class ArraysQuestions {
     public static void main(String[] args) {
         int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9},{10,11,12}};
         int[][] answer = getTransposeOfMatrix(array);
-        for(int[] value: answer){
-            BasicArray.printArray(value);
+        for(int[] rowValue: answer){
+            BasicArray.printArray(rowValue);
         }
     }
 
