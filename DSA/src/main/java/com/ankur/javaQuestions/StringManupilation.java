@@ -5,6 +5,9 @@ public class StringManupilation {
     public static void main(String[] args) {
         System.out.println(getCharWithIndexingOneForLowerCaseString("static"));
         System.out.println(getUpperCase("ankur"));
+        if("".isEmpty()){
+            System.out.println("Blank");
+        }
 
     }
 
@@ -26,5 +29,11 @@ public class StringManupilation {
         }
         return answer.toString();
     }
+
+//    public static int checkPamQuestion(String A){
+//        if(A.isEmpty()){
+//            System.out.println("Blank");
+//        }
+//    }
 
 }
