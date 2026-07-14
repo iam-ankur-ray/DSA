@@ -8,21 +8,21 @@ import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
-//        HashMap<Integer,String> students = new HashMap<>();
-//        students.put(1,"Ankur");
-//        students.put(2,"Priye");
-//        students.put(3,"Ashu");
-//
-//        for(Integer keys: students.keySet()){  //This is how we iterate to Hashmap
-//            System.out.println(keys + " " + students.get(keys));
-//        }
-        int[] array = {1,2,1,2,4,5,1,2,5,3};
-        System.out.println(getUniqueElements(array));
-        System.out.println(getSumOfUniqueElements(array));
-        getFrequencyOfUniqueElements(array);
-        System.out.println(getUpperCaseCount("PriyeAnkurRay"));
-        reverseString("ankur ray");
-        System.out.println(getSumOfIntegersInString("a123bc34"));
+        HashMap<Integer,String> students = new HashMap<>();
+        students.put(1,"Ankur");
+        students.put(2,"Priye");
+        students.put(3,"Ashu");
+
+        for(Integer keys: students.keySet()){  //This is how we iterate to Hashmap
+            System.out.println(keys + " " + students.get(keys));
+        }
+//        int[] array = {1,2,1,2,4,5,1,2,5,3};
+//        System.out.println(getUniqueElements(array));
+//        System.out.println(getSumOfUniqueElements(array));
+//        getFrequencyOfUniqueElements(array);
+//        System.out.println(getUpperCaseCount("PriyeAnkurRay"));
+//        reverseString("ankur ray");
+//        System.out.println(getSumOfIntegersInString("a123bc34"));
 
     }
 
