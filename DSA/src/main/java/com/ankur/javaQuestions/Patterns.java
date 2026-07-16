@@ -11,14 +11,19 @@ public class Patterns {
 //            System.out.print("*");
 //        }
 //        System.out.println();
-        printSquareStar(5);
+        actualPyramid(5);
     }
 
     /**
      * Return N rows and M columns of star
      *
      * @param N rows
-     * @param M columns
+     * @param M columns like this for 5 * 5
+     *      *****
+     *      *****
+     *      *****
+     *      *****
+     *      *****
      */
     private static void printTriangle(int N, int M) {
         for (int i = 0; i < N; i++) {
@@ -28,6 +33,10 @@ public class Patterns {
 
     /**
      * Print the pyramid
+     * *
+     * **
+     * ***
+     * ****
      */
     private static void printPyramid(int N) {
         for (int row = 0; row < N; row++) {
@@ -40,6 +49,11 @@ public class Patterns {
 
     /**
      * Print the pyramid as number
+     * 1
+     * 12
+     * 123
+     * 1234
+     * 12345
      */
     private static void printPyramidicalNumber(int N) {
         for (int row = 1; row <= N; row++) {
@@ -52,6 +66,11 @@ public class Patterns {
 
     /**
      * Print the pyramid in reverse
+     * *****
+     * ****
+     * ***
+     * **
+     * *
      */
     private static void printReverse(int n) {
         for (int i = n; i > 0; i--) {
@@ -78,9 +97,9 @@ public class Patterns {
 
     private static void actualPyramid(int n) {
         int stars = 1;
+        int space = n;
         for (int i = 1; i <= n; i++) {
-            int space = n - i;
-            for (int j = i; j <= space; j++) {
+            for (int j = 1; j <= space; j++) {
                 System.out.print(" ");
             }
 
@@ -90,6 +109,7 @@ public class Patterns {
 
             System.out.println();
             stars += 2;
+            space -= 1;
         }
     }
 
