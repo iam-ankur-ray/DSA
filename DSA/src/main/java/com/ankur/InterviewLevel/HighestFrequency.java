@@ -20,10 +20,10 @@ public class HighestFrequency {
         }
         int maxCount =0;
         int maxValue = 0;
-        for(Integer values : frequencyMap.keySet()){
-            if(frequencyMap.get(values)>maxCount){
-                maxCount = frequencyMap.get(values);
-                maxValue = values;
+        for(Integer keys : frequencyMap.keySet()){
+            if(frequencyMap.get(keys)>maxCount){
+                maxCount = frequencyMap.get(keys);
+                maxValue = keys;
             }
         }
         return maxValue;

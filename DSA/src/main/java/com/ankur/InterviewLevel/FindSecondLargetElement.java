@@ -7,28 +7,22 @@ public class FindSecondLargetElement {
     }
 
     public static int getSecondLargestElement(int[] array){
-        if(array.length == 1){
-            return -1;
-        }
 
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
 
-        for(int i = array.length -1; i >= 0; i--){
+        for(int i = 0; i < array.length; i++){
             if(array[i] > largest){
                 if(secondLargest < largest){
                     secondLargest = largest;
                 }
                 largest = array[i];
-            } else if(array[i] < largest && array[i] > secondLargest){
+            } else if(array[i] > secondLargest && array[i] < largest){
                 secondLargest = array[i];
             }
         }
 
-
-        if(secondLargest == Integer.MIN_VALUE && largest > Integer.MIN_VALUE){
-            return secondLargest;
-        } else if(secondLargest == Integer.MIN_VALUE) {
+        if(secondLargest == Integer.MIN_VALUE){
             return -1;
         } else {
             return secondLargest;
