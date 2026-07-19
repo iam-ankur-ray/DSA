@@ -11,7 +11,7 @@ public class Patterns {
 //            System.out.print("*");
 //        }
 //        System.out.println();
-        actualPyramid(5);
+        printSquareStar(4);
     }
 
     /**
@@ -115,6 +115,13 @@ public class Patterns {
 
     // stars = row * 2
     // space = row + 2 from second row onwards
+
+    /**
+     * ********
+     * ***  ***
+     * **    **
+     * something like above
+     */
     private static void printStars(int n) {
         int space = 0;
         for (int i = n; i > 0; i--) {
@@ -135,6 +142,12 @@ public class Patterns {
         }
     }
 
+    /**
+     * *    *
+     * **  **
+     * ******
+     * Print like above
+     */
     private static void printStarsReverse(int n) {
         int space = n * 2 - 2;
         for (int i = 0; i < n; i++) {
@@ -155,6 +168,14 @@ public class Patterns {
         }
     }
 
+    /**
+     * *
+     * **
+     * ***
+     * **
+     * *
+     * Like above
+     */
     private static void printDiamondPyramid(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
@@ -183,6 +204,13 @@ public class Patterns {
         }
     }
 
+    /**
+     * ****
+     * *  *
+     * *  *
+     * ****
+     * Like above for number 4
+     */
     private static void printSquareStar(int n){
 
         for(int i = 1; i <=n; i++){
