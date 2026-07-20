@@ -11,7 +11,7 @@ public class HelperMethods {
         int[] array = new int[size];
 
         for (int i = 0; i < size; i++) {
-            System.out.print("Enter the element : ");
+            System.out.print("Enter the element " + (i + 1) + " : ");
             array[i] = sc.nextInt();
         }
         return array;
