@@ -22,15 +22,16 @@ public class RomanToInt {
         return romanToIntMap;
     }
 
-    public static int romanToInteger(String romanValueAsString) {
+    public static int romanToInteger(String romanValue) {
 
         HashMap<Character, Integer> map = romanToIntMap();
+        int size = romanValue.length();
 
         int answer = 0;
-        for (int i = 0; i < romanValueAsString.length() - 1; i++) {
+        for (int i = 0; i < size - 1; i++) {
 
-            char currentRomanCharacter = romanValueAsString.charAt(i);
-            char nextRomanCharacter = romanValueAsString.charAt(i + 1);
+            char currentRomanCharacter = romanValue.charAt(i);
+            char nextRomanCharacter = romanValue.charAt(i + 1);
             int currentValue = map.get(currentRomanCharacter);
             int nextValue = map.get(nextRomanCharacter);
 
@@ -41,7 +42,9 @@ public class RomanToInt {
             }
         }
 
-        answer += map.get(romanValueAsString.charAt(romanValueAsString.length() - 1));
+        char lastCharacter = romanValue.charAt(size - 1);
+
+        answer += map.get(lastCharacter);
 
         return answer;
     }
