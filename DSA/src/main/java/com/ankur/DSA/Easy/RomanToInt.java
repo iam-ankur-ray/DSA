@@ -10,18 +10,6 @@ public class RomanToInt {
         System.out.println(romanToInteger(roman));
     }
 
-    public static HashMap<Character, Integer> romanToIntMap() {
-        HashMap<Character, Integer> romanToIntMap = new HashMap<>();
-        romanToIntMap.put('I', 1);
-        romanToIntMap.put('V', 5);
-        romanToIntMap.put('X', 10);
-        romanToIntMap.put('L', 50);
-        romanToIntMap.put('C', 100);
-        romanToIntMap.put('D', 500);
-        romanToIntMap.put('M', 1000);
-        return romanToIntMap;
-    }
-
     public static int romanToInteger(String romanValue) {
 
         HashMap<Character, Integer> map = romanToIntMap();
@@ -47,5 +35,17 @@ public class RomanToInt {
         answer += map.get(lastCharacter);
 
         return answer;
+    }
+
+    public static HashMap<Character, Integer> romanToIntMap() {
+        HashMap<Character, Integer> romanToIntMap = new HashMap<>();
+        romanToIntMap.put('I', 1);
+        romanToIntMap.put('V', 5);
+        romanToIntMap.put('X', 10);
+        romanToIntMap.put('L', 50);
+        romanToIntMap.put('C', 100);
+        romanToIntMap.put('D', 500);
+        romanToIntMap.put('M', 1000);
+        return romanToIntMap;
     }
 }
