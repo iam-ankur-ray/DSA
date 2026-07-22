@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        getFact(29);
+
 
 //        ArrayList<Integer> list = new ArrayList<>();
 //        Scanner sc = new Scanner(System.in);
@@ -42,36 +44,36 @@ public class Main {
 //        list1.add(97.5);
 //        System.out.println(list1);
 
-        Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt();
-
-        while(T > 0){
-            int size = sc.nextInt();
-            int[] array = new int[size];
-            for(int i = 0; i < size; i++){
-                array[i] = sc.nextInt();
-            }
-
-            int findrowValue = sc.nextInt();
-
-            boolean rowValueFound = false;
-            for(int i = 0; i < size; i++){
-                if(array[i] == findrowValue){
-                    rowValueFound = true;
-                    break;
-                }
-            }
-
-            if(rowValueFound){
-                System.out.println(1);
-            } else {
-                System.out.println(0);
-            }
-
-
-
-            T--;
-        }
+//        Scanner sc = new Scanner(System.in);
+//        int T = sc.nextInt();
+//
+//        while(T > 0){
+//            int size = sc.nextInt();
+//            int[] array = new int[size];
+//            for(int i = 0; i < size; i++){
+//                array[i] = sc.nextInt();
+//            }
+//
+//            int findrowValue = sc.nextInt();
+//
+//            boolean rowValueFound = false;
+//            for(int i = 0; i < size; i++){
+//                if(array[i] == findrowValue){
+//                    rowValueFound = true;
+//                    break;
+//                }
+//            }
+//
+//            if(rowValueFound){
+//                System.out.println(1);
+//            } else {
+//                System.out.println(0);
+//            }
+//
+//
+//
+//            T--;
+//        }
     }
 
     public static ArrayList<Integer> getSpecificElement(ArrayList<Integer> list){
@@ -129,5 +131,41 @@ public class Main {
             stairs.add(temp);
         }
         return stairs;
+    }
+
+    public static int getFactorials(int n){
+        int count = 0;
+        for(int i = 1; i <= Math.sqrt(n); i++){
+            if(i == n/i){
+                count++;
+            }else if(i > n/i) {
+                break;
+            } else if(n % i == 0) count += 2;
+        }
+
+        return count;
+    }
+
+    // Another way of writing the same code
+    public static void getFact(int n){
+        int count = 0;
+
+        for(int i = 1; i <= (int) Math.sqrt(n); i++){
+            if(n % i == 0){
+                if(i == n){
+                    count++;
+                } else {
+                    count += 2;
+                }
+            }
+        }
+
+        System.out.println(count);
+
+        if(count == 2){
+            System.out.println("Its a prime number");
+        } else {
+            System.out.println("Not a prime number");
+        }
     }
 }
