@@ -33,6 +33,7 @@ public class Nqueen {
         if (row == chess.length) {
             print(chess);
             System.out.println("-".repeat(40));
+            return;
         }
 
         for (int col = 0; col < chess.length; col++) {
