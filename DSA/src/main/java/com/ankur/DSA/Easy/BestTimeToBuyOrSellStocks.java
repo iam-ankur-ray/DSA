@@ -12,7 +12,7 @@ public class BestTimeToBuyOrSellStocks {
     }
 
     /*
-    Broot force solution.
+    Brute force solution.
      */
     public static int maximumProfit(int[] price){
 
