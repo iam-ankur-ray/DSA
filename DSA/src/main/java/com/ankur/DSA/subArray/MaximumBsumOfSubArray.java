@@ -32,4 +32,26 @@ public class MaximumBsumOfSubArray {
         return finalAnswer;
 
     }
+
+    public static int countSubarrayWithSizeLessB(int[] A, int B) {
+        int[] prefix = new int[A.length];
+
+        prefix[0] = A[0];
+        for(int i = 1; i < A.length; i++){
+            prefix[i] = prefix[i-1] + A[i];
+        }
+
+        int count = 0;
+
+        for(int i = 0; i < A.length; i++){
+            for(int j = i; j < A.length; j++){ // size of subarray is j - i + 1
+                int sum = (i == 0) ? prefix[j] : prefix[j] - prefix[i-1];
+                if(sum < B){
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
 }
