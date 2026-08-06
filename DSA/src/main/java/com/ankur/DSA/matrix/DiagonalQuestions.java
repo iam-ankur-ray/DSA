@@ -2,12 +2,15 @@ package com.ankur.DSA.matrix;
 
 import com.ankur.DSA.util.HelperMethods;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class DiagonalQuestions {
 
     public static void main(String[] args) {
         int[][] array = {{1,2,3},{4,5,6},{7,8,9}};
         int[][] array2 = {{1,2},{3,4}};
-        printAllAntiDiagonal(array2);
+        HelperMethods.printMatrix(getAllAntiDiagonal(array2));
     }
 
     /**
@@ -24,42 +27,33 @@ public class DiagonalQuestions {
     /**
      * Print all anti-diagonal elements for an array
      */
-    public static void printAllAntiDiagonal(int[][] matrix){
-        int size = matrix.length;
-
-        int i = 0;
+    public static int[][] getAllAntiDiagonal(int[][] A){
+        int size = A.length;
+        int[][] finalAnswer = new int[size * 2 - 1][size];
+        int i = 0, mainRow = 0;
         for(int j = 0; j < size; j++){
-            int a = i, b = j;
-            int index = 0;
-            int[] ans = new int[size];
+            int a = i, b = j, index=0;
             while(b >= 0 && a < size){
-                ans[index] = matrix[a][b];
+                finalAnswer[mainRow][index] = A[a][b];
                 a++;
                 b--;
                 index++;
             }
-            for(int value: ans){
-                System.out.print(value + " ");
-            }
-            System.out.println();
+            mainRow++;
         }
 
         int j = size - 1;
         for(int row = 1; row < size; row++){
-            int a = row, b = j;
-            int index = 0;
-            int[] ans = new int[size];
+            int a = row, b = j,mainCol  = 0;
             while(a < size && b >=0){
-                ans[index] = matrix[a][b];
+                finalAnswer[mainRow][mainCol] = A[a][b];
                 a++;
                 b--;
-                index++;
+                mainCol++;
             }
-
-            for(int value : ans){
-                System.out.print(value + " ");
-            }
-            System.out.println();
+            mainRow++;
         }
+
+        return finalAnswer;
     }
 }
