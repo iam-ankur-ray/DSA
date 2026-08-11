@@ -1,7 +1,5 @@
 package com.ankur.DSA.StringQuestions;
 
-import java.util.Stack;
-
 public class ReverseWords {
     public static void main(String[] args) {
         String h = "I love java";
