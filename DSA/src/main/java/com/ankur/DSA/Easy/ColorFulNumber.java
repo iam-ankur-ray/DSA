@@ -6,9 +6,13 @@ import java.util.Set;
 
 public class ColorFulNumber {
     public static void main(String[] args) {
+        String A = "Priye";
+
         int num = 3425;
         boolean isColorful = isColorful(num);
         System.out.println(isColorful);
+        int[] alphabets = new int[26];
+        alphabets[A.charAt(1) - 'a']++;
     }
 
     public static boolean isColorful(int num){
