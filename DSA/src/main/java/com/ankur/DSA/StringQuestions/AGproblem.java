@@ -1,9 +1,14 @@
 package com.ankur.DSA.StringQuestions;
 
+import java.util.Arrays;
+
 public class AGproblem {
     public static void main(String[] args) {
         String A = "GUGPUAGAFQBMPYAGGAAOALAELGGGAOGLGEGZ";
-        System.out.println(getSumOfAGPairs(A));
+        System.out.println(isPrime(29));
+        int[] B = {14,2,8,5,3};
+        int[] p = {0,1,1,2,3};
+
     }
 
     /**
@@ -26,5 +31,20 @@ public class AGproblem {
         }
 
         return sum;
+    }
+
+    public static boolean isPrime(int N){
+        int factors = 0;
+        for(int i = 1; i <= N; i++){
+            if(N % i ==0){
+                factors++;
+            }
+        }
+
+        if(factors==2){
+            return true;
+        }
+
+        return false;
     }
 }
